@@ -6,11 +6,92 @@ import {
     Box,
     Typography,
     IconButton,
-    Chip
+    Chip,
+    Skeleton
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
 import { useEffect } from "react"
 import { GitHub, NavigateBefore, NavigateNext } from "@mui/icons-material"
+
+function ProjectCardSkeleton({ isDark }: { isDark: boolean }) {
+    return (
+        <Box
+            sx={{
+                border: "1px solid",
+                borderColor: isDark ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.15)",
+                borderRadius: "14px",
+                overflow: "hidden",
+                background: isDark ? "rgba(255,255,255,0.02)" : "rgba(0, 0, 0, 0.02)",
+                backdropFilter: "blur(10px)",
+                display: "flex",
+                flexDirection: "column",
+            }}
+        >
+            <Skeleton
+                variant="rectangular"
+                width="100%"
+                height={200}
+                sx={{
+                    bgcolor: isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)",
+                    transform: "none",
+                }}
+                animation="wave"
+            />
+
+            <Box sx={{ p: 3, flex: 1, display: "flex", flexDirection: "column", gap: 1.5 }}>
+                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <Skeleton
+                        variant="text"
+                        width="55%"
+                        height={28}
+                        sx={{ bgcolor: isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)" }}
+                        animation="wave"
+                    />
+                    <Skeleton
+                        variant="circular"
+                        width={28}
+                        height={28}
+                        sx={{ bgcolor: isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)" }}
+                        animation="wave"
+                    />
+                </Box>
+
+                {/* Description lines */}
+                <Skeleton
+                    variant="text"
+                    width="100%"
+                    height={18}
+                    sx={{ bgcolor: isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)" }}
+                    animation="wave"
+                />
+                <Skeleton
+                    variant="text"
+                    width="80%"
+                    height={18}
+                    sx={{ bgcolor: isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)" }}
+                    animation="wave"
+                />
+
+                {/* Tech chips */}
+                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 0.5 }}>
+                    {[60, 80, 70, 50].map((w, i) => (
+                        <Skeleton
+                            key={i}
+                            variant="rounded"
+                            width={w}
+                            height={24}
+                            sx={{
+                                borderRadius: "8px",
+                                bgcolor: isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)"
+                            }}
+                            animation="wave"
+                        />
+                    ))}
+                </Box>
+            </Box>
+        </Box>
+    )
+}
 
 function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
     const [imageIndex, setImageIndex] = useState(0);
@@ -21,7 +102,7 @@ function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
 
         const interval = setInterval(() => {
             setImageIndex((prev) => (prev + 1) % project.images.length);
-        }, 2000);
+        }, 1500);
 
         return () => clearInterval(interval);
     }, [isHovered, project.images.length]);
@@ -49,6 +130,11 @@ function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
                 display: "flex",
                 cursor: "pointer",
                 flexDirection: "column",
+                animation: "fadeInUp 0.5s ease both",
+                "@keyframes fadeInUp": {
+                    from: { opacity: 0, transform: "translateY(16px)" },
+                    to:   { opacity: 1, transform: "translateY(0)" },
+                },
                 "&:hover": {
                     transform: "translateY(-6px)",
                     borderColor: isDark ? "rgba(255,255,255,0.18)" : "rgba(0, 0, 0, 0.18)",
@@ -244,6 +330,12 @@ export default function ProjectsSection() {
 
     const theme = useTheme();
     const isDark = theme.palette.mode === "dark";
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setIsLoaded(true), 800);
+        return () => clearTimeout(timer);
+    }, []);
 
     const projects = [
         {
@@ -298,9 +390,14 @@ export default function ProjectsSection() {
                         gap: 3
                     }}
                 >
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} project={project} isDark={isDark} />
-                    ))}
+                    {isLoaded
+                        ? projects.map((project, index) => (
+                            <ProjectCard key={index} project={project} isDark={isDark} />
+                        ))
+                        : projects.map((_, index) => (
+                            <ProjectCardSkeleton key={index} isDark={isDark} />
+                        ))
+                    }
                 </Box>
 
             </Box>
