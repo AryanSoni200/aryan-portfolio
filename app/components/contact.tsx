@@ -1,5 +1,4 @@
 "use client";
-import { Phone } from "@mui/icons-material";
 import { Box, Typography, Chip, Button, Tooltip } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
@@ -86,7 +85,7 @@ export default function ContactSection() {
                     sx={{
                         width: "48px",
                         height: "1px",
-                        bgcolor: isDark ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.15)",
+                        bgcolor: isDark ? "rgba(255, 255, 255, 0.36)" : "rgba(0,0,0,0.15)",
                         mb: 4,
                     }}
                 />
@@ -102,8 +101,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                     }}
                 >
-                    Building something exciting or have an idea to explore?
-                    I'm always open to thoughtful collaborations — reach out and let's talk.
+                    Whether you have a project idea, a collaboration opportunity, or just want to connect — feel free to reach out. I’m always excited to work on projects.
                 </Typography>
 
                 <Tooltip
@@ -139,7 +137,7 @@ export default function ContactSection() {
                             py: 1.6,
                             bgcolor: isDark ? "#fff" : "#0a0a0a",
                             color: isDark ? "#0a0a0a" : "#fff",
-                            fontFamily: "'DM Sans', sans-serif",
+                            fontFamily: "poppins",
                             fontWeight: 600,
                             fontSize: "0.9rem",
                             letterSpacing: "0.02em",
@@ -164,20 +162,6 @@ export default function ContactSection() {
                             },
                         }}
                     >
-                        <Box
-                            component="svg"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            sx={{ width: "17px", height: "17px", flexShrink: 0 }}
-                        >
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </Box>
                         Send an Email
                     </Button>
 
@@ -187,7 +171,7 @@ export default function ContactSection() {
                     sx={{
                         mt: 3,
                         fontFamily: "poppins",
-                        fontSize: "0.72rem",
+                        fontSize: "0.85rem",
                         letterSpacing: "0.06em",
                     }}
                 >

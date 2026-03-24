@@ -32,7 +32,8 @@ export default function HeroSection() {
                         sx={{
                             fontSize: { xs: "30px", sm: "60px" },
                             fontWeight: "bold",
-                            fontFamily: "poppins",
+                            fontFamily: "'Playfair Display', serif",
+                            fontStyle: "italic",
                             color: isDark ? "white" : "black",
                             mb: 1,
                         }}
@@ -43,12 +44,15 @@ export default function HeroSection() {
                     <Typography
                         sx={{
                             fontSize: { xs: "14px", sm: "18px" },
-                            color: isDark ? "white" : "black",
+                            color: isDark ? "#9ca3af" : "#313131ff",
                             lineHeight: 1.6,
-                            fontFamily: "poppins"
+                            fontFamily: "poppins",
                         }}
                     >
-                        Full Stack Developer from Ahmedabad, Gujarat. I enjoy working on both frontend and backend, turning ideas into scalable, user-friendly digital products.
+                        <span style={{ color: isDark ? "white" : "black", fontStyle: "italic" }}>
+                            Full Stack Developer{" "}
+                        </span>
+                        from Ahmedabad, Gujarat. I enjoy working on both frontend and backend, turning ideas into scalable, user-friendly digital products.
                     </Typography>
                 </Box>
 
