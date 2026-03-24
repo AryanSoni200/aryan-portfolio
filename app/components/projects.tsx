@@ -345,7 +345,7 @@ export default function ProjectsSection() {
             title: "Task Management System",
             description: "Production-ready task management API built with Next.js, Prisma, and PostgreSQL featuring authentication, roles, comments, attachments, and workflows.",
             images: ["/1.png", "/2.png", "/3.png"],
-            github: "https://github.com/",
+            github: "https://github.com/abhaygadhvi11/todochimp-frontend-",
             tech: ["Next.js", "Prisma", "PostgreSQL", "JWT Authentication"]
         },
         {
