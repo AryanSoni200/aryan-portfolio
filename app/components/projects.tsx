@@ -265,7 +265,8 @@ function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
                             fontWeight: 600,
                             color: isDark ? "white" : "black",
                             lineHeight: 1.2,
-                            mb: 1
+                            mb: 1,
+                            fontFamily: "poppins"
                         }}
                     >
                         {project.title}
@@ -291,7 +292,8 @@ function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
                         fontSize: "0.9rem",
                         color: isDark ? "#9ca3af" : "#414141",
                         mb: 2,
-                        flex: 1
+                        flex: 1,
+                        fontFamily: "poppins"
                     }}
                 >
                     {project.description}
@@ -308,6 +310,7 @@ function ProjectCard({ project, isDark }: { project: any, isDark: boolean }) {
                                 color: isDark ? "#e2e8f0" : "#334155",
                                 fontSize: "0.75rem",
                                 fontWeight: 500,
+                                fontFamily: "poppins",
                                 borderRadius: "8px",
                                 border: "1px solid",
                                 borderColor: isDark ? "rgba(255,255,255,0.08)" : "rgba(0, 0, 0, 0.08)",
@@ -362,7 +365,7 @@ export default function ProjectsSection() {
         {
             title: "Quiz Application",
             description: "Android quiz application with multiple categories, scoring system, and interactive UI.",
-            images: ["/next.svg", "/next.svg"],
+            images: ["/q1.jpeg", "/q2.jpeg", "/q3.jpeg", "/q4.jpeg"],
             github: "https://github.com/AryanSoni200/Q-A.git",
             tech: ["Android", "Java", "XML"]
         }
@@ -374,7 +377,9 @@ export default function ProjectsSection() {
 
                 <Typography
                     sx={{
-                        fontSize: { xs: "30px", sm: "40px" },
+                        fontSize: { xs: "25px", sm: "35px" },
+                        textTransform: "uppercase",
+                        fontFamily: "poppins",
                         fontWeight: 600,
                         mb: 4,
                         color: isDark ? "white" : "black"

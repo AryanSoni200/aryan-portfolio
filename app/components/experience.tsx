@@ -54,7 +54,9 @@ export default function ExperienceSection() {
 
                 <Typography
                     sx={{
-                        fontSize: { xs: "30px", sm: "35px" },
+                        fontSize: { xs: "25px", sm: "35px" },
+                        textTransform: "uppercase",
+                        fontFamily: "poppins",
                         fontWeight: 600,
                         mb: 2,
                         color: isDark ? "white" : "black",
@@ -110,6 +112,7 @@ export default function ExperienceSection() {
                                         sx={{
                                             color: isDark ? "white" : "black",
                                             fontWeight: 500,
+                                            fontFamily: "poppins",
                                             fontSize: { xs: "14px", sm: "16px" },
                                             display: "flex",
                                             alignItems: "center",
@@ -134,6 +137,7 @@ export default function ExperienceSection() {
                                     <Typography
                                         sx={{
                                             fontSize: { xs: "12px", sm: "14px" },
+                                            fontFamily: "poppins",
                                             color: isDark ? "#e4e4e7" : "#3c3c3c",
                                             lineHeight: 1.4,
                                         }}
@@ -145,6 +149,7 @@ export default function ExperienceSection() {
                                 <Typography
                                     sx={{
                                         fontSize: { xs: "12px", sm: "14px" },
+                                        fontFamily: "poppins",
                                         color: isDark ? "white" : "black",
                                         textAlign: "right",
                                         flexShrink: 0,
@@ -166,6 +171,7 @@ export default function ExperienceSection() {
                                 <Typography
                                     sx={{
                                         fontSize: { xs: "12px", sm: "14px" },
+                                        fontFamily: "poppins",
                                         color: isDark ? "white" : "black",
                                         lineHeight: 1.6,
                                     }}

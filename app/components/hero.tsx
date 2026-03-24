@@ -32,6 +32,7 @@ export default function HeroSection() {
                         sx={{
                             fontSize: { xs: "30px", sm: "60px" },
                             fontWeight: "bold",
+                            fontFamily: "poppins",
                             color: isDark ? "white" : "black",
                             mb: 1,
                         }}
@@ -44,6 +45,7 @@ export default function HeroSection() {
                             fontSize: { xs: "14px", sm: "18px" },
                             color: isDark ? "white" : "black",
                             lineHeight: 1.6,
+                            fontFamily: "poppins"
                         }}
                     >
                         Full Stack Developer from Ahmedabad, Gujarat. I enjoy working on both frontend and backend, turning ideas into scalable, user-friendly digital products.

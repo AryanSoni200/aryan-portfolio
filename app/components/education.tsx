@@ -13,7 +13,9 @@ export default function EducationSection() {
 
                 <Typography
                     sx={{
-                        fontSize: { xs: "30px", sm: "40px" },
+                        fontSize: { xs: "25px", sm: "35px" },
+                        textTransform: "uppercase",
+                        fontFamily: "poppins",
                         fontWeight: 600,
                         color: isDark ? "white" : "black",
                     }}
@@ -68,6 +70,7 @@ export default function EducationSection() {
                                 component={Link}
                                 href="https://www.ssgec.ac.in/"
                                 sx={{
+                                    fontFamily: "poppins",
                                     display: "inline-flex",
                                     alignItems: "center",
                                     gap: 0.5,
@@ -98,6 +101,7 @@ export default function EducationSection() {
 
                             <Typography
                                 sx={{
+                                    fontFamily: "poppins",
                                     fontSize: { xs: "0.75rem", sm: "0.85rem" },
                                     color: isDark ? "white" : "black",
                                 }}
@@ -107,6 +111,7 @@ export default function EducationSection() {
 
                             <Typography
                                 sx={{
+                                    fontFamily: "poppins",
                                     fontSize: { xs: "0.75rem", sm: "0.85rem" },
                                     color: isDark ? "white" : "black",
                                 }}
@@ -118,6 +123,7 @@ export default function EducationSection() {
 
                         <Typography
                             sx={{
+                                fontFamily: "poppins",
                                 fontSize: { xs: "0.75rem", sm: "0.85rem" },
                                 color: isDark ? "white" : "black",
                                 textAlign: "right",

@@ -12,8 +12,10 @@ export default function AboutSection() {
 
                 <Typography
                     sx={{
-                        fontSize: { xs: "30px", sm: "40px" },
+                        fontSize: { xs: "25px", sm: "35px" },
                         fontWeight: 600,
+                        fontFamily: "poppins",
+                        textTransform: "uppercase",
                         mb: 2,
                         color: isDark ? "white" : "black",
                     }}
@@ -35,6 +37,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         My journey into technology began with learning programming fundamentals
@@ -48,6 +51,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         I later moved into{" "}
@@ -68,6 +72,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         Over time, my curiosity evolved into a deep passion for building scalable systems and continuously exploring new technologies.
@@ -77,6 +82,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         Currently, I work at{" "}
@@ -93,6 +99,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         Alongside development, I have strong creative skills in image and video editing. I volunteered at BAPS Swaminarayan Chhatralay, Bhavnagar.
@@ -102,6 +109,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         I also work with{" "}
@@ -122,6 +130,7 @@ export default function AboutSection() {
                         sx={{
                             fontSize: { xs: "0.9rem", sm: "1rem" },
                             color: isDark ? "#9ca3af" : "#414141",
+                            fontFamily: "poppins"
                         }}
                     >
                         I enjoy combining technology and creativity, whether it's developing complex applications or producing engaging visual content.

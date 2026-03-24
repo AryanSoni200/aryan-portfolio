@@ -41,7 +41,9 @@ export default function SkillsSection() {
                 {/* Title */}
                 <Typography
                     sx={{
-                        fontSize: { xs: "30px", sm: "40px" },
+                        fontSize: { xs: "25px", sm: "35px" },
+                        textTransform: "uppercase",
+                        fontFamily: "poppins",
                         fontWeight: 600,
                         mb: { xs: 3, md: 4 },
                         color: isDark ? "white" : "black"
@@ -66,6 +68,7 @@ export default function SkillsSection() {
                                 bgcolor: isDark ? "rgba(255,255,255,0.03)" : "rgba(0, 0, 0, 0.04)",
                                 color: isDark ? "#e2e8f0" : "#334155",
                                 fontWeight: 500,
+                                fontFamily: "poppins",
                                 borderRadius: "10px",
                                 height: { xs: "34px", sm: "38px" },
                                 fontSize: { xs: "0.85rem", sm: "0.95rem" },
