@@ -101,7 +101,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                     }}
                 >
-                    Whether you have a project idea, a collaboration opportunity, or just want to connect — feel free to reach out. I’m always excited to work on projects.
+                    Whether you have a project idea, a collaboration in mind, or simply want to connect — feel free to reach out via social media, email, or a phone call. I’m always open to discussing new opportunities and building meaningful work.
                 </Typography>
 
                 <Tooltip
@@ -177,6 +177,9 @@ export default function ContactSection() {
                         fontSize: "0.85rem",
                         letterSpacing: "0.06em",
                         color: isDark ? "white" : "black",
+                        ":hover": {
+                            bgcolor: isDark ? "black" : "white",
+                        }
                     }}
                 >
                     +91 9662680709
