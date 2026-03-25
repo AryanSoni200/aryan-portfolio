@@ -167,16 +167,20 @@ export default function ContactSection() {
 
                 </Tooltip>
 
-                <Typography
+                <Button
+                    href="tel:+919662680709"
+                    component="a"
+                    disableRipple
                     sx={{
                         mt: 3,
                         fontFamily: "poppins",
                         fontSize: "0.85rem",
                         letterSpacing: "0.06em",
+                        color: isDark ? "white" : "black",
                     }}
                 >
                     +91 9662680709
-                </Typography>
+                </Button>
             </Box>
         </Box>
     );
