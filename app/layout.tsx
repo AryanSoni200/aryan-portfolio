@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     default: "Aryan Soni | Full Stack Developer",
     template: "%s | Aryan Soni",
   },
+
+  verification: {
+    google: "mDna30TIZZ4xk1Ysl1YEjXLxqDWz_Ucxww9AH95hW5E",
+  },
+
   description:
     "Full Stack Developer specializing in Next.js, React, Node.js, and scalable web applications. Explore my projects, experience, and skills.",
 
@@ -71,7 +76,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
+  
 export default function RootLayout({
   children,
 }: {
