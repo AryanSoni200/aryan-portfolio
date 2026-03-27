@@ -343,14 +343,14 @@ export default function ProjectsSection() {
     const projects = [
         {
             title: "Task Management System",
-            description: "Production-ready task management API built with Next.js, Prisma, and PostgreSQL featuring authentication, roles, comments, attachments, and workflows.",
+            description: "An inter-enterprise task management platform that replaces email-based coordination with a structured system for task allocation, workflows, and document collaboration.",
             images: ["/1.png", "/2.png", "/3.png"],
             github: "https://github.com/abhaygadhvi11/todochimp-frontend-",
             tech: ["Next.js", "Prisma", "PostgreSQL", "JWT Authentication"]
         },
         {
             title: "AI Services",
-            description: "AI Services is a platform that provides AI services to users. It is a work in progress.",
+            description: "An AI services platform that enables users to create dynamic prompts using variables and access AI-powered features through API key integration.",
             images: ["/one.png", "/two.png", "/three.png", "/four.png"],
             github: "https://github.com/abhaygadhvi11/AI-Service",
             tech: ["Node.js", "Express.js", "Gemini API", "PostgreSQL", "React", "MUI"]

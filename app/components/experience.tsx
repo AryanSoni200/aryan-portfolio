@@ -11,8 +11,7 @@ const experiences = [
         company: "Procuregenie",
         role: "Full Stack Developer",
         duration: "Jun 2026 – Present",
-        description:
-            "Full Stack Developer – building with SF-based founders, shipping real agentic AI systems.",
+        description: "Specializing in modern web technologies, building responsive UIs, robust APIs, and scalable backend systems.",
     },
     {
         logo: "/ct.png",
@@ -20,8 +19,7 @@ const experiences = [
         company: "Crystal Treasure",
         role: "Image & Video Editor",
         duration: "Feb 2025 – Present",
-        description:
-            "Image & Video Editor – editing images and videos for the company, and also handle social media and e-commerce platform.",
+        description: "Edit images and videos for the company, and also handle social media and e-commerce platform.",
     },
     {
         logo: "/itechbrain1.png",
@@ -29,8 +27,7 @@ const experiences = [
         company: "iTechBrains",
         role: "Application Developer",
         duration: "Jan 2025 – Apr 2025",
-        description:
-            "Application Developer – building with SF-based founders, shipping real agentic AI systems, and working across the stack in Typescript.",
+        description: "Worked as an Application Developer Intern.",
     },
 ]
 
