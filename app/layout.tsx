@@ -21,7 +21,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Aryan Soni | Full Stack Developer",
+    default: "Aryan Soni",
     template: "%s | Aryan Soni",
   },
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aryan-portfolio-rust-one.vercel.app/"),
 
   openGraph: {
-    title: "Aryan Soni | Full Stack Developer",
+    title: "Aryan Soni",
     description:
       "Explore my portfolio, projects, and experience in modern web development.",
     url: "https://aryan-portfolio-rust-one.vercel.app/",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Soni | Full Stack Developer",
+    title: "Aryan Soni",
     description:
       "Explore my portfolio, projects, and experience in modern web development.",
     images: ["/image.png"],
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-  
+
 export default function RootLayout({
   children,
 }: {
