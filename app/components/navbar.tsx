@@ -60,42 +60,21 @@ export default function Navbar() {
                 }}
             >
 
-                <Tooltip
-                    title="Home"
-                    arrow
-                    placement="top"
-                    slotProps={{
-                        tooltip: {
-                            sx: {
-                                bgcolor: isDark ? "white" : "black",
-                                color: isDark ? "black" : "white",
-                                fontSize: "0.75rem",
-                                textAlign: "center"
-                            }
-                        },
-                        arrow: {
-                            sx: {
-                                color: isDark ? "black" : "white"
-                            }
+                <IconButton
+                    onClick={() => {
+                        const section = document.getElementById("home");
+                        section?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    sx={{
+                        color: isDark ? "#cfcfcf" : "black",
+                        transition: "all 0.3s ease",
+                        "&:hover": {
+                            transform: "scale(1.2)",
                         }
                     }}
                 >
-                    <IconButton
-                        onClick={() => {
-                            const section = document.getElementById("home");
-                            section?.scrollIntoView({ behavior: "smooth" });
-                        }}
-                        sx={{
-                            color: isDark ? "#cfcfcf" : "black",
-                            transition: "all 0.3s ease",
-                            "&:hover": {
-                                transform: "scale(1.2)",
-                            }
-                        }}
-                    >
-                        <Home />
-                    </IconButton>
-                </Tooltip>
+                    <Home />
+                </IconButton>
 
                 <Divider
                     orientation="vertical"

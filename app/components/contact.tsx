@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, Chip, Button, Tooltip } from "@mui/material";
+import { Box, Typography, Chip, Button, Tooltip, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export default function ContactSection() {
@@ -167,24 +167,34 @@ export default function ContactSection() {
 
                 </Tooltip>
 
-                <Button
-                    href="tel:+919662680709"
-                    component="a"
-                    disableRipple
+                <Divider
                     sx={{
-                        mt: 3,
+                        mt: 6,
+                        mb: 2,
+                        bgcolor: isDark ? "white" : "black",
+                        width: "70px",
+                        height: "1px",
+                        opacity: 0.2,
+                        boxSizing: "border-box",
+                        borderWidth: "0px 0px 1px 0px",
+                        borderStyle: "solid",
+                        borderColor: isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)",
+                        borderRadius: "0px",
+                    }}
+                />
+
+                <Typography
+                       sx={{
+                        mt: 2,
+                        fontSize: "0.75rem",
                         fontFamily: "poppins",
-                        fontSize: "0.85rem",
-                        letterSpacing: "0.06em",
-                        color: isDark ? "white" : "black",
-                        ":hover": {
-                            bgcolor: isDark ? "black" : "white",
-                        }
+                        color: isDark ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.4)",
+                        letterSpacing: "0.05em",
                     }}
                 >
-                    +91 9662680709
-                </Button>
+                    © {new Date().getFullYear()} Aryan Soni. All rights reserved.
+                </Typography>
             </Box>
-        </Box>
+        </Box>  
     );
 }
