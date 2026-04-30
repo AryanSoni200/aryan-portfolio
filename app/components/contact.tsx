@@ -14,7 +14,8 @@ export default function ContactSection() {
                 justifyContent: "center",
                 px: { xs: 2, sm: 4 },
                 py: { xs: 2, md: 4 },
-                bgcolor: isDark ? "black" : "white",
+                // bgcolor: isDark ? "black" : "white",
+                bgcolor: "transparent",
                 position: "relative",
                 overflow: "hidden",
                 "&::before": {
