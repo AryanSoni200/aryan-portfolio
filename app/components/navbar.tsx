@@ -42,7 +42,7 @@ function DockIcon({ mouseX, children }: any) {
     <motion.div
       ref={ref}
       style={{
-        width,                    
+        width,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -64,11 +64,11 @@ export default function Navbar() {
   const mouseX = useMotionValue(Infinity);
 
   const socialLinks = [
-    { name: "GitHub",    icon: <GitHub />,    url: "https://github.com/AryanSoni200",                  color: "#000000ff" },
-    { name: "LinkedIn",  icon: <LinkedIn />,  url: "https://www.linkedin.com/in/soni-aryan/",           color: "#0077B5"   },
-    { name: "X",         icon: <X />,         url: "https://x.com/adsoni499331",                        color: "#000000ff" },
-    { name: "Instagram", icon: <Instagram />, url: "https://www.instagram.com/a_d_soni/",               color: "#E4405F"   },
-    { name: "YouTube",   icon: <YouTube />,   url: "https://www.youtube.com/@aryansoni1588",            color: "#FF0000"   },
+    { name: "GitHub", icon: <GitHub />, url: "https://github.com/AryanSoni200", color: "#000000ff" },
+    { name: "LinkedIn", icon: <LinkedIn />, url: "https://www.linkedin.com/in/soni-aryan/", color: "#0077B5" },
+    { name: "X", icon: <X />, url: "https://x.com/adsoni499331", color: "#000000ff" },
+    { name: "Instagram", icon: <Instagram />, url: "https://www.instagram.com/a_d_soni/", color: "#E4405F" },
+    { name: "YouTube", icon: <YouTube />, url: "https://www.youtube.com/@aryansoni1588", color: "#FF0000" },
   ]
 
   return (
@@ -94,11 +94,11 @@ export default function Navbar() {
           animation: "slideUp 0.8s ease",
           overflow: "visible",
           "@keyframes slideUp": {
-            "0%":   { transform: "translate(-50%, 100px)", opacity: 0 },
-            "100%": { transform: "translate(-50%, 0)",     opacity: 1 },
+            "0%": { transform: "translate(-50%, 100px)", opacity: 0 },
+            "100%": { transform: "translate(-50%, 0)", opacity: 1 },
           }
         }}
-        >
+      >
         <DockIcon mouseX={mouseX}>
           <IconButton
             onClick={() => {
@@ -108,7 +108,6 @@ export default function Navbar() {
             sx={{
               color: isDark ? "#cfcfcf" : "black",
               transition: "all 0.3s ease",
-              // ─── CHANGED: removed scale hover (DockIcon handles it) ───
             }}
           >
             <Home />

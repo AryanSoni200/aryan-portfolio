@@ -33,11 +33,14 @@ export default function Home() {
         <Box
           sx={{
             position: "fixed",
-            inset: 0,
             zIndex: 0,
+            width: "100%",
+            height: "100dvh",
+            top: 0,
+            left: 0,
           }}
         >
-          <Particles className="z-0" quantity={300} />
+          <Particles className="w-full h-full" quantity={300} />
         </Box>
       )}
 

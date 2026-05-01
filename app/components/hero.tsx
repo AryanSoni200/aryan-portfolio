@@ -2,8 +2,10 @@
 import Image from "next/image"
 import { Box, Typography } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
+import { useState } from "react"
 
 export default function HeroSection() {
+    const [isLoaded, setIsLoaded] = useState(false)
     const theme = useTheme();
     const isDark = theme.palette.mode === "dark";
     return (
@@ -70,6 +72,19 @@ export default function HeroSection() {
                         bgcolor: isDark ? "black" : "white",
                     }}
                 >
+                    {isLoaded && (
+                        <Typography
+                            sx={{
+                                position: "absolute",
+                                fontSize: { xs: 28, sm: 34 },
+                                fontWeight: "bold",
+                                color: isDark ? "white" : "black",
+                            }}
+                        >
+                            AS
+                        </Typography>
+                    )}
+
                     <Image
                         src="/image.png"
                         alt="Aryan Soni"
